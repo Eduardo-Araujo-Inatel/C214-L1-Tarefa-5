@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "06cdcfa4-2659-4943-b871-5b40002bab19",
+		"name": "C214 - L1 - T5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14060704"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/movie/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListByProducer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"produtora\": \"Marvel Studios\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/listProducer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"listProducer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListByName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"O Senhor dos Anéis: A Sociedade do An\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/listName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"listName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Vingadores: Guerra Infinita\",\n    \"produtora\": \"Marvel Studios\",\n    \"atores\": [\"Robert Downey Jr.\", \"Chris Hemsworth\", \"Mark Ruffalo\", \"Tom Holland\"],\n    \"ano\": 2018\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Homem-Aranha: Longe de Casa\",\n    \"produtora\": \"Marvel Studios\",\n    \"atores\": [\"Robert Downey Jr.\", \"Tom Holland\"],\n    \"ano\": 2019\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Star Wars: O Despertar da Força\",\n    \"produtora\": \"Lucasfilm Ltd.\",\n    \"atores\": [\"Daisy Ridley\", \"John Boyega\", \"Adam Driver\"],\n    \"ano\": 2015\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"O Senhor dos Anéis: A Sociedade do An\",\n    \"produtora\": \"New Line Cinema\",\n    \"atores\": [\"Elijah Wood\", \"Ian McKellen\", \"Viggo Mortensen\"],\n    \"ano\": 2001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"O Senhor dos Anéis: A Sociedade do Anel\",\n    \"produtora\": \"New Line Cinema\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/updateByProducer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"updateByProducer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteByName",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/movie/delete/Star Wars: O Despertar da Força",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"delete",
+						"Star Wars: O Despertar da Força"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
